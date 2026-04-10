@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import FloatingWhatsApp from "./components/ui/FloatingWhatsApp";
@@ -9,7 +9,7 @@ import ProjectPage from "./pages/ProjectPage";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Header />
       <main>
         <Routes>
@@ -21,7 +21,7 @@ function App() {
       </main>
       <Footer />
       <FloatingWhatsApp />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
